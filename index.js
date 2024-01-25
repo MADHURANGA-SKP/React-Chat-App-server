@@ -3,8 +3,9 @@ const http = require("http").createServer(app);
 const mongoose = require("mongoose");
 const socketio = require("socket.io");
 const io = socketio(http);
+//password and username removed
 const mongoDB =
-  "mongodb+srv://madhuranga333:O3kubL7CsyuJfjeJ@cluster0.ttbybqr.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://password and username removed@cluster0.ttbybqr.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("connected"))
